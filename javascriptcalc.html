@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+  <body>
+    <div class="main_container">
+      <div id="main-body">
+        <div id="display">0</div>
+        <div id="clear" onclick="allClear()" class="orange">AC</div>
+        <div id="divide" onclick="numbers(this)" class="orange">/</div>
+        <div id="multiply" onclick="numbers(this)" class="orange">*</div>
+        <div id="oneClear" onclick="clearData()" class="orange">C</div>
+        <div id="seven" onclick="numbers(this)" class="hover">7</div>
+        <!-- this makes it a object , so id becomes a property of it.-->
+        <div id="eight" onclick="numbers(this)" class="hover">8</div>
+        <div id="nine" onclick="numbers(this)" class="hover">9</div>
+        <div id="subtract" onclick="numbers(this)" class="orange">-</div>
+        <div id="four" onclick="numbers(this)" class="hover">4</div>
+        <div id="five" onclick="numbers(this)" class="hover">5</div>
+        <div id="six" onclick="numbers(this)" class="hover">6</div>
+        <div id="add" onclick="numbers(this)" class="orange">+</div>
+        <div id="one" onclick="numbers(this)" class="hover">1</div>
+        <div id="two" onclick="numbers(this)" class="hover">2</div>
+        <div id="three" onclick="numbers(this)" class="hover">3</div>
+        <div id="equals" onclick="answer()" class="equalorange">=</div>
+        <div id="zero" class="zero hover" onclick="numbers(this)">0</div>
+        <div id="decimal" onclick="numbers(this)" class="hover">.</div>
+      </div>
+      <div class="history_section">
+        <h2>History</h2>
+        <div class="history_container">
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
